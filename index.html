@@ -58,6 +58,21 @@
       <h3> length of the joined variable</h3>
      <p id="length"></p>
 
+     <h3> first number</h3>
+     <p id="1no."></p>
+
+     <h3> second number</h3>
+     <p id="2no."></p>
+
+     <h3> maximum of them </h3>
+     <p id="max"></p>
+
+     <h3> minimum of them </h3>
+     <p id="min"></p>
+
+     <h3> square of second number</h3>
+     <p id="sqrt"></p>
+
      
 
        <script>
@@ -71,7 +86,7 @@
 
        var joined = firstword.concat(secondword);
        console.log(joined);
-       document.getElementById("joined_variables").innerHTML=joined;
+       document.getElementById("joined_variables").innerHTML=joined+" mam i have used two variable and joined them using concat ";
 
        var replaced = joined.replace("Store","knowledge");
        console.log(replaced);
@@ -89,7 +104,26 @@
           console.log(length);
             document.getElementById("length").innerHTML=length + " there is a space ; so it takes that as a letter too";
 
-          
+            var first_number = 5;
+          console.log(first_number);
+            document.getElementById("1no.").innerHTML=first_number
+
+            var second_number = 8
+          console.log(second_number);
+            document.getElementById("2no.").innerHTML=second_number
+
+            var min = Math.min(first_number,second_number);
+           console.log(min) ;
+           document.getElementById("min").innerHTML=min
+
+           var  max = Math.max(first_number,second_number);
+           console.log(max) ;
+           document.getElementById("max").innerHTML=max
+
+           var sqrt  = Math.sqrt(second_number) ;
+           console.log(sqrt) ;
+           document.getElementById("sqrt").innerHTML=sqrt
+
         </script>
     </body>
  </html>
